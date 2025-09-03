@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #111;  
+      color: #f4f4f4;   
+    }
+    header {
+      background: #000;
+      color: orange;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    img {
+    width: 150px;
+    height: 150px;
+   
+    object-fit: cover;
+    
+     }
+   nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-top: 10px;
+}
+nav a {
+      color: #f4f4f4;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: orange;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: orange;
+    }
+    
+    #about {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(255,140,0,0.3);
+      text-align: center;
+    }
+     #img {
+      Width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom:15px;
+      
+      }
+       #skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #skills li {
+      background: orange;
+      color: #000;
+      margin: 10px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  
+    .edu {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(255,140,0,0.3);
+    }
+    .edu h3 {
+      color: orange;
+    }
+    
+    #contact a {
+      display: inline-block;
+      background: orange;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #contact a:hover {
+      background: #f4f4f4;
+      color: #000;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: orange;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      
+   <a  href="#about me">About me</a>
+   <a  href="#skills">Skills</a>
+   <a  href="#education">Education</a>
+   <a  href="#contact">Contact</a>
+   
+     </nav>
+     <br>
+<img src="https://i.supaimg.com/8bb30818-b737-4881-a6d0-ad15e60e3bed.png">
+    
+     
+
+    <h1>Hello, 🙋‍♀️I'm Sujitha!</h1>
+   <p>BCA student| Government arts college Chidambaram</p>
+   
+   <a  href="https://www.linkedin.com/in/sujitha-s-40b02134b" target="_blank" 
+   style="display:inline-block; padding:10px 20px; background-color:orange; color:black; text-decoration:none; border-radius:5px;">
+   Connect on LinkedIn
+   </a>
+  </header>
+    
+  
+  <section id="about">
+    <h2>About Me</h2>
+  
+    
+    <p> Undergraduate Student of BCA at Government arts college,</p><p>i have basic knowledge of C,Python,C++ </p>I enjoy creating creative websites using HTML, CSS, and JavaScript. </p>
+     <p>Welcome to my portfolio!</p>
+     
+  </section>
+
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      
+      <li>C</li>
+      <li>python</li>
+      <li>C++</li>
+      <li>HTML</li>
+     </ul>
+  </section>
+
+  
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>Bachelor of Computer Application</h3>
+      <p>Government arts college , Chidambaram </p>
+      <p>Affiliated to Annamalai University</p>
+    </div>
+    <div class="edu">
+      <h3>High secondary School</h3>
+      <p>GGHSS 2022 – 2024</p>
+    </div>
+  </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>sujisujitha7002@gmail.com</p>
+    <p>Bhuvanagiri, Cuddalore district, TamilNadu</p>
+    <p>Connect with me on LinkedIn:</p>
+    <p>👇</p>
+    
+<a href="https://www.linkedin.com/in/sujitha-s-40b02134b" target="_blank" 
+   style="display:inline-block; padding:10px 20px; background-color:orange; color:black; text-decoration:none; border-radius:5px;">
+   Connect on LinkedIn
+</a>
+</section>
+ <footer>
+    <p>&copy; 2025 My Portfolio. Thanks for visiting my portfolio.</p>
+  </footer>
+
+  
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
