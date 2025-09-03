@@ -7,3 +7,4 @@ well-organized and attractive format.
 It is designed using HTML, CSS, and optionally JavaScript to 
 
 create a simple and responsive layout.
+
